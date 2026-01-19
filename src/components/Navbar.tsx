@@ -46,9 +46,11 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button size="sm" className="gap-2">
-              <Download className="w-4 h-4" />
-              Resume
+            <Button size="sm" className="gap-2" asChild>
+              <a href="/Priyadarshini_Resume.pdf" download>
+                <Download className="w-4 h-4" />
+                Resume
+              </a>
             </Button>
           </div>
 
@@ -74,9 +76,11 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button size="sm" className="mt-4 gap-2 w-full">
-              <Download className="w-4 h-4" />
-              Resume
+            <Button size="sm" className="mt-4 gap-2 w-full" asChild>
+              <a href="/Priyadarshini_Resume.pdf" download>
+                <Download className="w-4 h-4" />
+                Resume
+              </a>
             </Button>
           </div>
         )}
