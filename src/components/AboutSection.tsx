@@ -58,7 +58,7 @@ const AboutSection = () => {
                         </span>
                         <span className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
-                          Expected 2025
+                          Expected 2027
                         </span>
                       </div>
                     </div>
