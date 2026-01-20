@@ -1,13 +1,19 @@
-import { useState } from "react";
-import { Mail, Linkedin, Github, Send, MapPin, Phone } from "lucide-react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { Mail, Linkedin, Github, Send, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 
+const EMAILJS_SERVICE_ID = "service_ecxu1ln";
+const EMAILJS_TEMPLATE_ID = "template_0s2v9bu";
+const EMAILJS_PUBLIC_KEY = "PCagcw5zECPLTK3yx";
+
 const ContactSection = () => {
   const { toast } = useToast();
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,16 +31,30 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (EmailJS integration to be added)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        formRef.current!,
+        EMAILJS_PUBLIC_KEY
+      );
 
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
+      toast({
+        title: "Message Sent!",
+        description: "Thank you! I will get back to you within 24 hours.",
+      });
 
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -77,7 +97,7 @@ const ContactSection = () => {
             <Card className="bg-card border-border">
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold mb-6">Send a Message</h3>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label
                       htmlFor="name"
