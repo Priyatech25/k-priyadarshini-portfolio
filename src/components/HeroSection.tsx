@@ -20,10 +20,8 @@ const HeroSection = () => {
                 <img
                   src={profilePhoto}
                   alt="K Priyadarshini"
-                  className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-4 border-primary/30 shadow-xl transition-all duration-300 group-hover:scale-105 group-hover:border-primary/60 group-hover:shadow-2xl"
+                  className="w-44 h-44 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary shadow-xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"
                 />
-                {/* Decorative ring */}
-                <div className="absolute inset-0 rounded-full border-2 border-primary/20 transition-all duration-300 group-hover:border-primary/40" style={{ transform: "scale(1.1)" }} />
               </div>
             </div>
 
