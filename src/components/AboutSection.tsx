@@ -1,5 +1,6 @@
 import { GraduationCap, MapPin, Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const AboutSection = () => {
   return (
@@ -13,16 +14,16 @@ const AboutSection = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Profile Image Placeholder */}
+            {/* Profile Image */}
             <div className="flex justify-center">
-              <div className="relative">
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center border-2 border-primary/30">
-                  <div className="text-6xl md:text-7xl font-bold text-primary">
-                    KP
-                  </div>
-                </div>
+              <div className="relative group">
+                <img
+                  src={profilePhoto}
+                  alt="K Priyadarshini"
+                  className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-primary/30 shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:border-primary/60 group-hover:shadow-primary/20"
+                />
                 {/* Decorative ring */}
-                <div className="absolute inset-0 rounded-full border-2 border-primary/20 animate-pulse" style={{ transform: "scale(1.1)" }} />
+                <div className="absolute inset-0 rounded-full border-2 border-primary/20 transition-all duration-300 group-hover:border-primary/40 group-hover:scale-110" style={{ transform: "scale(1.1)" }} />
               </div>
             </div>
 
