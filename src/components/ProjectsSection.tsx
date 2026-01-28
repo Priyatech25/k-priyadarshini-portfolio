@@ -57,6 +57,7 @@ const projects: Project[] = [
       "Data visualization",
       "Pattern identification",
     ],
+    githubLink: "https://github.com/Priyatech25/Food-Inflation-Analysis",
   },
   {
     title: "AI-Based Hospital Management System",

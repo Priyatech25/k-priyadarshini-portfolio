@@ -1,12 +1,27 @@
-import { Briefcase, CheckCircle } from "lucide-react";
+import { Trophy, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-const experienceItems = [
-  "Analyzed datasets using Python and SQL for actionable insights",
-  "Built interactive dashboards using Power BI and Tableau",
-  "Performed data cleaning and visualization for exploratory data analysis",
-  "Developed full-stack applications with React.js, FastAPI, and Firebase",
-  "Created mobile applications using Flutter and integrated ML capabilities",
+interface HackathonExperience {
+  title: string;
+  subtitle?: string;
+  points: string[];
+}
+
+const hackathons: HackathonExperience[] = [
+  {
+    title: "IBM Z Datathon",
+    points: [
+      "Participated in a data-driven competition focused on analytical problem-solving using structured datasets and real-world scenarios.",
+    ],
+  },
+  {
+    title: "Hackotsava 2025",
+    subtitle: "Karmic Solutions – Canteen Management System",
+    points: [
+      "Developed a secure meal management system with user authentication, daily menu planning, and automated meal confirmation.",
+      "Built an admin dashboard for menu planning, reporting, and analytics, reducing food wastage and operational costs.",
+    ],
+  },
 ];
 
 const ExperienceSection = () => {
@@ -20,31 +35,45 @@ const ExperienceSection = () => {
             <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
           </div>
 
-          {/* Experience Card */}
+          {/* Hackathons & Competitions Card */}
           <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300">
             <CardContent className="p-8">
               {/* Header */}
               <div className="flex items-start gap-4 mb-8">
                 <div className="p-4 bg-primary/10 rounded-xl">
-                  <Briefcase className="w-8 h-8 text-primary" />
+                  <Trophy className="w-8 h-8 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Academic Projects</h3>
+                  <h3 className="text-2xl font-bold mb-2">Hackathons & Competitions</h3>
                   <p className="text-muted-foreground">
-                    Hands-on experience through coursework and personal projects
+                    Hands-on experience through competitive programming and innovation challenges
                   </p>
                 </div>
               </div>
 
-              {/* Experience Points */}
-              <div className="space-y-4">
-                {experienceItems.map((item, index) => (
+              {/* Hackathon Experiences */}
+              <div className="space-y-6">
+                {hackathons.map((hackathon, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-3 p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors duration-300"
+                    className="p-5 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors duration-300"
                   >
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{item}</span>
+                    <h4 className="text-lg font-semibold text-foreground mb-1">
+                      {hackathon.title}
+                    </h4>
+                    {hackathon.subtitle && (
+                      <p className="text-primary font-medium text-sm mb-3">
+                        {hackathon.subtitle}
+                      </p>
+                    )}
+                    <div className="space-y-2">
+                      {hackathon.points.map((point, pointIndex) => (
+                        <div key={pointIndex} className="flex items-start gap-3">
+                          <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                          <span className="text-muted-foreground text-sm">{point}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>
