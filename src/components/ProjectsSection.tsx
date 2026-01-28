@@ -13,41 +13,72 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "OCR Food Safety Scanner App",
-    description:
-      "A mobile application that scans food product labels using OCR and identifies harmful ingredients to improve food safety awareness.",
-    techStack: ["Flutter", "Google ML Kit", "Firebase"],
-    features: [
-      "OCR text extraction",
-      "Ingredient safety analysis",
-      "Firebase authentication",
-    ],
-  },
-  {
     title: "Real-Time Carbon Emission Predictor",
     description:
-      "A data-driven application that predicts carbon emissions in real time based on energy consumption and transportation data to promote environmental awareness.",
-    techStack: ["Python", "Machine Learning", "Pandas", "NumPy", "FastAPI", "Power BI"],
+      "Predicts carbon emissions using real-time data and analytical models to promote environmental awareness.",
+    techStack: ["Python", "Machine Learning", "APIs"],
     features: [
-      "ML-based prediction model",
-      "REST API",
-      "Data preprocessing",
-      "Emission trend visualization",
+      "Real-time emission prediction",
+      "Analytical modeling",
+      "Environmental insights",
     ],
     githubLink: "https://github.com/Priyatech25/Carbonpulse",
   },
   {
-    title: "Unique Food Recipes Application",
+    title: "Unique Food Recipes App",
     description:
-      "A full-stack application that provides users with unique and personalized food recipes based on ingredients and dietary preferences.",
-    techStack: ["React.js", "FastAPI", "Firebase", "MongoDB"],
+      "Suggests unique recipes based on available ingredients and user preferences.",
+    techStack: ["React", "APIs", "Firebase"],
     features: [
-      "Ingredient-based recommendations",
-      "User authentication",
-      "Save favorite recipes",
-      "Responsive UI",
+      "Ingredient-based suggestions",
+      "User preference matching",
+      "Recipe recommendations",
     ],
     githubLink: "https://github.com/Priyatech25/AI-Mood-Based-Unique-Recipe-App",
+  },
+  {
+    title: "OCR Food Chemicals Detector App",
+    description:
+      "Detects harmful food chemicals from food labels using OCR and AI-based analysis.",
+    techStack: ["Python", "OCR", "AI"],
+    features: [
+      "OCR text extraction",
+      "Chemical detection",
+      "AI-based analysis",
+    ],
+  },
+  {
+    title: "Food Inflation Data Analysis",
+    description:
+      "Analyzed food price inflation trends using real-world datasets to identify insights and patterns.",
+    techStack: ["Python", "Pandas", "Data Visualization"],
+    features: [
+      "Trend analysis",
+      "Data visualization",
+      "Pattern identification",
+    ],
+  },
+  {
+    title: "AI-Based Hospital Management System",
+    description:
+      "An AI-powered system to manage patient records, appointments, and hospital operations efficiently.",
+    techStack: ["Python", "Machine Learning", "Database", "Web Technologies"],
+    features: [
+      "Patient record management",
+      "Appointment scheduling",
+      "AI-powered operations",
+    ],
+  },
+  {
+    title: "Karmic Canteen – Smart Canteen Management",
+    description:
+      "A smart canteen management system built during Hackotsava 2025 to automate meal planning, confirmations, and administration.",
+    techStack: ["Web Technologies", "Database", "Authentication"],
+    features: [
+      "Secure user authentication",
+      "Daily menu management",
+      "Admin dashboard with analytics",
+    ],
   },
 ];
 
