@@ -13,72 +13,73 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Real-Time Carbon Emission Predictor",
+    title: "AI-Based Hospital Management System",
     description:
-      "Predicts carbon emissions using real-time data and analytical models to promote environmental awareness.",
-    techStack: ["Python", "Machine Learning", "APIs"],
+      "An AI-powered system to streamline hospital operations and improve patient care.",
+    techStack: ["Python", "Machine Learning", "Flask", "MongoDB"],
     features: [
-      "Real-time emission prediction",
-      "Analytical modeling",
-      "Environmental insights",
+      "Automated patient record management with AI insights",
+      "Intelligent appointment scheduling system",
+      "Data-driven decision support for healthcare",
+    ],
+  },
+  {
+    title: "Carbon Footprint Dashboard",
+    description:
+      "A comprehensive analytics dashboard for tracking and reducing carbon emissions.",
+    techStack: ["React", "MongoDB", "REST APIs", "Chart.js"],
+    features: [
+      "Real-time emission tracking and visualization",
+      "Interactive sustainability trend analysis",
+      "Actionable insights for environmental impact",
     ],
     githubLink: "https://github.com/Priyatech25/Carbonpulse",
   },
   {
-    title: "Unique Food Recipes App",
-    description:
-      "Suggests unique recipes based on available ingredients and user preferences.",
-    techStack: ["React", "APIs", "Firebase"],
-    features: [
-      "Ingredient-based suggestions",
-      "User preference matching",
-      "Recipe recommendations",
-    ],
-    githubLink: "https://github.com/Priyatech25/AI-Mood-Based-Unique-Recipe-App",
-  },
-  {
-    title: "OCR Food Chemicals Detector App",
-    description:
-      "Detects harmful food chemicals from food labels using OCR and AI-based analysis.",
-    techStack: ["Python", "OCR", "AI"],
-    features: [
-      "OCR text extraction",
-      "Chemical detection",
-      "AI-based analysis",
-    ],
-  },
-  {
     title: "Food Inflation Data Analysis",
     description:
-      "Analyzed food price inflation trends using real-world datasets to identify insights and patterns.",
-    techStack: ["Python", "Pandas", "Data Visualization"],
+      "Data-driven analysis of food price trends to uncover economic patterns.",
+    techStack: ["Python", "Pandas", "NumPy", "Matplotlib"],
     features: [
-      "Trend analysis",
-      "Data visualization",
-      "Pattern identification",
+      "Comprehensive trend analysis across regions",
+      "Visual storytelling with interactive charts",
+      "Actionable insights for policy decisions",
     ],
     githubLink: "https://github.com/Priyatech25/Food-Inflation-Analysis",
   },
   {
-    title: "AI-Based Hospital Management System",
+    title: "Unique Food Recipes Application",
     description:
-      "An AI-powered system to manage patient records, appointments, and hospital operations efficiently.",
-    techStack: ["Python", "Machine Learning", "Database", "Web Technologies"],
+      "Smart recipe recommendation system based on available ingredients.",
+    techStack: ["React", "Firebase", "APIs"],
     features: [
-      "Patient record management",
-      "Appointment scheduling",
-      "AI-powered operations",
+      "AI-powered ingredient-based suggestions",
+      "Personalized recipe recommendations",
+      "User preference learning system",
     ],
+    githubLink: "https://github.com/Priyatech25/AI-Mood-Based-Unique-Recipe-App",
   },
   {
-    title: "Karmic Canteen – Smart Canteen Management",
+    title: "Real-Time Carbon Emission Predictor",
     description:
-      "A smart canteen management system built during Hackotsava 2025 to automate meal planning, confirmations, and administration.",
-    techStack: ["Web Technologies", "Database", "Authentication"],
+      "Predictive analytics tool for environmental monitoring and awareness.",
+    techStack: ["Python", "Machine Learning", "APIs"],
     features: [
-      "Secure user authentication",
-      "Daily menu management",
-      "Admin dashboard with analytics",
+      "Real-time emission forecasting",
+      "ML-powered analytical modeling",
+      "Environmental impact awareness tools",
+    ],
+    githubLink: "https://github.com/Priyatech25/Carbonpulse",
+  },
+  {
+    title: "Karmic Canteen Management System",
+    description:
+      "Smart canteen automation to reduce food waste and streamline operations.",
+    techStack: ["React", "MongoDB", "Node.js", "Auth"],
+    features: [
+      "Automated meal planning and confirmations",
+      "Role-based access with secure authentication",
+      "Analytics dashboard for waste reduction",
     ],
   },
 ];
@@ -106,7 +107,7 @@ const ProjectsSection = () => {
                 className="group bg-card border-border hover:border-primary/50 transition-all duration-300 hover-lift overflow-hidden"
               >
                 {/* Project Header with gradient */}
-                <div className="h-2 bg-gradient-to-r from-primary to-blue-400" />
+                <div className="h-2 bg-gradient-to-r from-primary to-accent" />
 
                 <CardHeader>
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">

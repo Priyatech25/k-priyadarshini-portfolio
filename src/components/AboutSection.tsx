@@ -13,16 +13,15 @@ const AboutSection = () => {
           </div>
 
           {/* Bio Content */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              I am a Computer Science student with hands-on experience in data analysis, 
-              full-stack development, and mobile app development. I enjoy working with 
-              Python, SQL, React, Flutter, FastAPI, and Firebase to build practical 
-              applications that solve real-world problems.
+              Computer Science student passionate about <span className="text-primary font-medium">Data Science</span>, <span className="text-primary font-medium">AI</span>, and <span className="text-primary font-medium">Analytics</span>.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              I am actively seeking internship and entry-level opportunities where I can 
-              apply my skills and grow as a software professional.
+              I solve real-world problems through hackathons and hands-on projects.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed text-center">
+              Focused on building data-driven solutions that create impact.
             </p>
 
             {/* Education Card */}

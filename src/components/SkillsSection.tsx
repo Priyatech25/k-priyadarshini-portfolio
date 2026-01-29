@@ -1,4 +1,4 @@
-import { Code, Database, BarChart3, Wrench } from "lucide-react";
+import { BarChart3, Brain, Code, Wrench } from "lucide-react";
 
 interface SkillCategory {
   icon: React.ReactNode;
@@ -8,24 +8,24 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
+    icon: <BarChart3 className="w-6 h-6" />,
+    title: "Data Science & Analytics",
+    skills: ["Python", "Pandas", "NumPy", "Data Visualization", "SQL"],
+  },
+  {
+    icon: <Brain className="w-6 h-6" />,
+    title: "Machine Learning & AI",
+    skills: ["ML Basics", "Applied AI Projects", "Data Modeling"],
+  },
+  {
     icon: <Code className="w-6 h-6" />,
-    title: "Programming Languages",
-    skills: ["Python", "Java", "JavaScript", "SQL"],
+    title: "Full-Stack Development",
+    skills: ["React.js", "Flask", "MongoDB", "REST APIs", "Firebase"],
   },
   {
     icon: <Wrench className="w-6 h-6" />,
-    title: "Frameworks & Libraries",
-    skills: ["React.js", "Flutter", "FastAPI", "Flask", "Pandas", "NumPy", "Matplotlib"],
-  },
-  {
-    icon: <BarChart3 className="w-6 h-6" />,
-    title: "Data & Analytics",
-    skills: ["Power BI", "Tableau", "Data Cleaning", "Data Visualization", "EDA"],
-  },
-  {
-    icon: <Database className="w-6 h-6" />,
-    title: "Tools & Technologies",
-    skills: ["Firebase", "MongoDB", "Git", "GitHub", "Docker"],
+    title: "Tools & Platforms",
+    skills: ["GitHub", "Chart.js", "Vercel", "Git", "Docker"],
   },
 ];
 
