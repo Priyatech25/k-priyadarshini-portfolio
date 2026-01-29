@@ -17,11 +17,13 @@ const HeroSection = () => {
             {/* Profile Photo */}
             <div className="flex-shrink-0 animate-fade-in">
               <div className="relative group">
-                <img
-                  src={profilePhoto}
-                  alt="K Priyadarshini"
-                  className="w-44 h-44 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary shadow-xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"
-                />
+                <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary shadow-xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                  <img
+                    src={profilePhoto}
+                    alt="K Priyadarshini"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
               </div>
             </div>
 
