@@ -9,17 +9,21 @@ interface HackathonExperience {
 
 const hackathons: HackathonExperience[] = [
   {
-    title: "IBM Z Datathon",
+    title: "IBM Z Datathon 2025",
+    subtitle: "Carbon Footprint Reduction Dashboard",
     points: [
-      "Participated in a data-driven competition focused on analytical problem-solving using structured datasets and real-world scenarios.",
+      "Developed a full-stack carbon analytics dashboard to track and analyze emission data.",
+      "Visualized sustainability trends using interactive charts for actionable insights.",
+      "Integrated MongoDB with REST APIs for scalable, real-time data access.",
     ],
   },
   {
     title: "Hackotsava 2025",
     subtitle: "Karmic Solutions – Canteen Management System",
     points: [
-      "Developed a secure meal management system with user authentication, daily menu planning, and automated meal confirmation.",
-      "Built an admin dashboard for menu planning, reporting, and analytics, reducing food wastage and operational costs.",
+      "Developed a smart canteen management system to automate daily meals and confirmations.",
+      "Implemented secure user authentication with role-based access control.",
+      "Built an admin dashboard for menu planning and analytics to reduce food wastage.",
     ],
   },
 ];
