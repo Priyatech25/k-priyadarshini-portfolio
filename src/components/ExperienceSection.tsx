@@ -82,15 +82,6 @@ const ExperienceSection = () => {
                 ))}
               </div>
 
-              {/* Call to action */}
-              <div className="mt-8 p-4 bg-primary/5 rounded-lg border border-primary/20">
-                <p className="text-muted-foreground text-center">
-                  🚀 Actively seeking internship and entry-level opportunities in 
-                  <span className="text-primary font-medium"> Data Analytics </span>
-                  and
-                  <span className="text-primary font-medium"> Full-Stack Development</span>
-                </p>
-              </div>
             </CardContent>
           </Card>
         </div>

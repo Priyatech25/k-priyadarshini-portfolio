@@ -35,15 +35,18 @@ const HeroSection = () => {
               </p>
 
               {/* Name */}
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in">
                 K Priyadarshini
               </h1>
 
+              {/* Professional Headline */}
+              <p className="text-lg md:text-xl text-primary font-medium mb-4 animate-fade-in max-w-xl">
+                Aspiring Data Scientist building real-world solutions using analytics, AI, and full-stack development.
+              </p>
+
               {/* Title */}
-              <div className="text-xl md:text-2xl text-muted-foreground mb-6 animate-fade-in">
-                <span className="text-primary">Computer Science - Data Science Student</span>
-                <span className="mx-3">|</span>
-                <span>Data Analyst & Full-Stack Developer</span>
+              <div className="text-base md:text-lg text-muted-foreground mb-6 animate-fade-in">
+                <span>Computer Science - Data Science Student</span>
               </div>
 
               {/* Tagline */}
