@@ -18,12 +18,12 @@ const HeroSection = () => {
             <div className="flex-shrink-0 animate-fade-in">
               <div className="relative group">
                 {/* Subtle outer ring */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-transparent blur-sm scale-105" />
-                <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border border-primary/20 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg ring-2 ring-primary/10 ring-offset-2 ring-offset-background">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-transparent blur-sm scale-110" />
+                <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border border-primary/20 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg ring-2 ring-primary/10 ring-offset-2 ring-offset-background bg-muted/20 flex items-center justify-center">
                   <img
                     src={profilePhoto}
                     alt="K Priyadarshini"
-                    className="w-full h-full object-cover object-top scale-105"
+                    className="w-[95%] h-[95%] object-contain"
                   />
                 </div>
               </div>
