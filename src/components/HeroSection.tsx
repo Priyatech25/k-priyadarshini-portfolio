@@ -23,7 +23,7 @@ const HeroSection = () => {
                   <img
                     src={profilePhoto}
                     alt="K Priyadarshini"
-                    className="w-[95%] h-[95%] object-contain"
+                    className="w-[102%] h-[102%] max-w-none max-h-none object-contain object-center"
                   />
                 </div>
               </div>
