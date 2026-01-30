@@ -14,15 +14,28 @@ const AboutSection = () => {
 
           {/* Bio Content */}
           <div className="space-y-4">
+            {/* OPTION 1 – DATA ANALYTICS FOCUSED (Currently Active) */}
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              Computer Science student passionate about <span className="text-primary font-medium">Data Science</span>, <span className="text-primary font-medium">AI</span>, and <span className="text-primary font-medium">Analytics</span>.
+              Computer Science (Data Science) student with strong interest in <span className="text-primary font-medium">Data Analytics</span> and <span className="text-primary font-medium">Full-Stack Development</span>.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              I solve real-world problems through hackathons and hands-on projects.
+              Experienced in transforming real-world data into meaningful insights through dashboards, visualizations, and analytics-driven applications.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              Focused on building data-driven solutions that create impact.
+              Passionate about building scalable, user-focused solutions and actively seeking internship opportunities in Data Analytics and Full-Stack Development.
             </p>
+
+            {/* OPTION 2 – FULL-STACK + ANALYTICS BALANCE (Uncomment to use)
+            <p className="text-lg text-muted-foreground leading-relaxed text-center">
+              Data Analytics and Full-Stack Developer with hands-on experience in building data-driven web applications, dashboards, and management systems.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed text-center">
+              Skilled in analyzing datasets, visualizing trends, and developing end-to-end solutions using modern web technologies.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed text-center">
+              Actively seeking internship opportunities to apply analytics and full-stack skills in real-world projects.
+            </p>
+            */}
 
             {/* Education Card */}
             <Card className="bg-secondary/50 border-primary/20 mt-8">

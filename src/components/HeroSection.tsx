@@ -41,17 +41,17 @@ const HeroSection = () => {
 
               {/* Professional Headline */}
               <p className="text-lg md:text-xl text-primary font-medium mb-4 animate-fade-in max-w-xl">
-                Aspiring Data Scientist building real-world solutions using analytics, AI, and full-stack development.
+                Data Analytics & Full-Stack Developer | Seeking Internship Opportunities
               </p>
 
               {/* Title */}
               <div className="text-base md:text-lg text-muted-foreground mb-6 animate-fade-in">
-                <span>Computer Science - Data Science Student</span>
+                <span>Computer Science (Data Science) Student</span>
               </div>
 
               {/* Tagline */}
               <p className="text-lg text-muted-foreground max-w-2xl mb-10 animate-fade-in">
-                Building data-driven solutions & full-stack applications that solve
+                Building data-driven dashboards & full-stack applications that solve
                 real-world problems.
               </p>
 
