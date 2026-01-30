@@ -47,7 +47,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button size="sm" className="gap-2" asChild>
-              <a href="/Priyadarshini_Resume.pdf" download>
+              <a href="/K_Priyadarshini_Resume.pdf" target="_blank" rel="noopener noreferrer" download="K_Priyadarshini_Resume.pdf">
                 <Download className="w-4 h-4" />
                 Resume
               </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button size="sm" className="mt-4 gap-2 w-full" asChild>
-              <a href="/Priyadarshini_Resume.pdf" download>
+              <a href="/K_Priyadarshini_Resume.pdf" target="_blank" rel="noopener noreferrer" download="K_Priyadarshini_Resume.pdf">
                 <Download className="w-4 h-4" />
                 Resume
               </a>

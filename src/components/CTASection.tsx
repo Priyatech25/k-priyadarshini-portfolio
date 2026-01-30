@@ -27,7 +27,7 @@ const CTASection = () => {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="gap-2 hover-lift" asChild>
-              <a href="/Priyadarshini_Resume.pdf" download>
+              <a href="/K_Priyadarshini_Resume.pdf" target="_blank" rel="noopener noreferrer" download="K_Priyadarshini_Resume.pdf">
                 <Download className="w-5 h-5" />
                 Download Resume
               </a>
