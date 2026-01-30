@@ -2,16 +2,16 @@ import { Lightbulb, TrendingUp, BarChart3, Brain } from "lucide-react";
 
 const exploringItems = [
   {
-    icon: <Brain className="w-5 h-5" />,
-    title: "Advanced Machine Learning",
-  },
-  {
     icon: <BarChart3 className="w-5 h-5" />,
-    title: "Data Storytelling & Visualization",
+    title: "Data Analytics & Business Intelligence",
   },
   {
     icon: <TrendingUp className="w-5 h-5" />,
-    title: "Scalable AI & Data-Driven Applications",
+    title: "Data Storytelling & Visualization",
+  },
+  {
+    icon: <Brain className="w-5 h-5" />,
+    title: "Scalable Full-Stack Applications",
   },
 ];
 

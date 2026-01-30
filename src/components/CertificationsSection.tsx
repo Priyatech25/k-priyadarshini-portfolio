@@ -24,12 +24,17 @@ const certifications: Certification[] = [
     issuer: "Online Certification",
   },
   {
-    title: "Machine Learning Fundamentals",
+    title: "SQL & Data Analytics",
+    type: "course",
+    issuer: "Certification",
+  },
+  {
+    title: "Web Development Fundamentals",
     type: "course",
     issuer: "Online Course",
   },
   {
-    title: "SQL & Data Analytics",
+    title: "Python Programming",
     type: "course",
     issuer: "Certification",
   },
