@@ -13,15 +13,16 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "AI-Based Hospital Management System",
+    title: "🏥 Hospital-AI-Analytics",
     description:
-      "An AI-powered system to streamline hospital operations and improve patient care.",
-    techStack: ["Python", "Machine Learning", "Flask", "MongoDB"],
+      "A data-driven healthcare analytics project that analyzes hospital appointment data to identify no-show patterns, evaluate doctor performance, and generate actionable insights using Python and Power BI.",
+    techStack: ["Python", "Pandas", "NumPy", "Power BI", "DAX", "Jupyter Notebook"],
     features: [
-      "Automated patient record management with AI insights",
-      "Intelligent appointment scheduling system",
-      "Data-driven decision support for healthcare",
+      "Cleaned raw hospital data; calculated No-Show Rate (26.0%) & Cancellation Rate (25.5%)",
+      "Built doctor-wise performance comparison & KPI dashboards",
+      "Designed interactive visualizations for data-backed scheduling decisions",
     ],
+    githubLink: "https://github.com/Priyatech25/Hospital-AI-Analytics",
   },
   {
     title: "Carbon Footprint Dashboard",
